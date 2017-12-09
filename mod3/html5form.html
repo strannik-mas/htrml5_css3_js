@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>form</title>
+		<script>
+			window.onload = function (){
+			document.getElementById("colorsControl").setCustomValidity('Insert value');
+			}
+		</script>
+		<style>
+			input:invalid
+			{
+				background-color:red;
+			}
+		</style>
+        </head>
+    <body>
+        <form>
+			<input type="text" list="colors" id="colorsControl"
+			required="required"
+			oninput="if (this.value.length ==0) this.setCustomValidity('введи число'); else this.setCustomValidity('')"
+			><br/>
+			<input type="search"><br/>
+			<input type="date"><br/>
+			<input type="text" pattern="\d\d\d"><br/>
+			<input type="number" autofocus min="0" max = "100"><br/>
+			<input type="submit">
+        </form>
+       
+    </body>
+</html>

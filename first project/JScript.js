@@ -1,0 +1,3 @@
+﻿function sayEngHi() {
+    alert("privet");
+}

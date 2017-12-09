@@ -1,0 +1,11 @@
+﻿header.page-header, footer.page-footer, nav.page-nav {
+    display:none;
+}
+.container {
+    padding: 0;
+    max-width: none;
+}
+.about > article > section {
+    /* Columns Layout */
+    column-count: 1;
+}

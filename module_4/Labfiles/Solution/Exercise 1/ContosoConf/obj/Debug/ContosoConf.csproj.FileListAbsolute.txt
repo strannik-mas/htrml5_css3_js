@@ -1,0 +1,4 @@
+D:\Документы\html5_css3_js\module_4\Labfiles\Solution\Exercise 1\ContosoConf\bin\ContosoConf.dll
+D:\Документы\html5_css3_js\module_4\Labfiles\Solution\Exercise 1\ContosoConf\bin\ContosoConf.pdb
+D:\Документы\html5_css3_js\module_4\Labfiles\Solution\Exercise 1\ContosoConf\obj\Debug\ContosoConf.dll
+D:\Документы\html5_css3_js\module_4\Labfiles\Solution\Exercise 1\ContosoConf\obj\Debug\ContosoConf.pdb

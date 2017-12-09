@@ -1,0 +1,5 @@
+D:\Документы\html5_css3_js\3day\demo\AjaxWebApp\bin\AjaxWebApp.dll
+D:\Документы\html5_css3_js\3day\demo\AjaxWebApp\bin\AjaxWebApp.pdb
+D:\Документы\html5_css3_js\3day\demo\AjaxWebApp\obj\Debug\AjaxWebApp.csprojResolveAssemblyReference.cache
+D:\Документы\html5_css3_js\3day\demo\AjaxWebApp\obj\Debug\AjaxWebApp.dll
+D:\Документы\html5_css3_js\3day\demo\AjaxWebApp\obj\Debug\AjaxWebApp.pdb

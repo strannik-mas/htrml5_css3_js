@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Позиционирование</title>
+    <script>
+        function onPosition(position)
+        {
+            var lon = position.coords.longitude;
+            var lat = position.coords.latitude;
+            var acc = position.coords.accuracy;
+            var r = document.getElementById("result");
+            r.innerHTML = lat + ", " + lon + ", " + acc;
+        }
+        function onPositionError(error)
+        {
+            var r = document.getElementById("result");
+            r.innerHTML = error.message;
+        }
+
+        function position()
+        {
+            navigator.geolocation.getCurrentPosition(
+                onPosition, onPositionError
+                );
+        }
+        window.onload = function () {
+            //var r = document.getElementById("result");
+            //r.innerHTML = window.performance.timing;
+        }
+    </script>
+</head>
+<body>
+    <h2 id="result"></h2>
+    <input type="button" value="Play" onclick="position()" />
+</body>
+</html>

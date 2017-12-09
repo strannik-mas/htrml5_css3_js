@@ -1,0 +1,4 @@
+D:\Документы\html5_css3_js\3day\6module\Starter\Exercise 3\ContosoConf\bin\ContosoConf.dll
+D:\Документы\html5_css3_js\3day\6module\Starter\Exercise 3\ContosoConf\bin\ContosoConf.pdb
+D:\Документы\html5_css3_js\3day\6module\Starter\Exercise 3\ContosoConf\obj\Debug\ContosoConf.dll
+D:\Документы\html5_css3_js\3day\6module\Starter\Exercise 3\ContosoConf\obj\Debug\ContosoConf.pdb

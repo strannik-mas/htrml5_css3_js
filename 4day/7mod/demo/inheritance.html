@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        function test()
+        {
+            var Pets = function (name, age)
+            {
+                this.name = name;
+                this.age = age;
+            }
+            Pets.prototype = {
+                show: function ()
+                {
+                    alert(this.name + " : " + this.age);
+                }
+            };
+            var Dog = function (name, age, breed)
+            {
+                this.name = name;
+                this.age = age;
+                this.breed = breed;
+                this.show = function ()
+                {
+                    alert(this.name+" : " +this.age+" ( " +this.breed+" )")
+                }
+            }
+            Dog.prototype = new Pets();
+            Dog.prototype.constructor = Dog; //если этого не сделать ф-я констр. ссылается на констр. pets
+
+            var d1 = new Dog("Щарик", 2, "двор");
+            d1.show();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="test" onclick="test()" />
+</body>
+</html>

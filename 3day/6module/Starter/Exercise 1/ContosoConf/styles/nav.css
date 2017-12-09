@@ -1,0 +1,76 @@
+/* Styles for the page navigation bar */
+
+/* TODO: nav.page-nav */
+
+/* TODO: nav.page-nav .container */
+
+/* TODO: nav.page-nav a */
+
+/* TODO: nav.page-nav a:first-child */
+
+/* TODO: nav.page-nav a:hover */
+
+/* TODO: nav.page-nav .active */
+
+/* TODO: nav.page-nav .active:hover */
+
+/* TODO: nav.page-nav .active:before */
+
+/* TODO: nav.page-nav .active:after */
+    nav.page-nav {
+        background-color: #1d1d1d;
+        line-height: 6rem;
+        font-size:1.7rem;
+    
+    }
+    nav.page-nav .container {
+        display:-ms-flexbox;
+        display:flexbox;
+    }
+    nav.page-nav a {
+        display:block;
+        min-width:9rem;
+        padding:0 1.8rem;
+        text-align:center;
+        color:#c3c3c3;
+        border-right:1px dotted #3d3d3d;
+        text-shadow: 1px 1px 2px black; 
+        text-transform:uppercase;
+    }
+    nav.page-nav a:first-child {
+        border-left:1px dotted #3d3d3d;
+    }
+    nav.page-nav a:hover {
+        background-color:#000000;
+        color:#e4e4e4;
+    }
+    nav.page-nav .active {
+        color:white;
+        background:linear-gradient(90deg, #c95656, #8d0606);
+    }
+    nav.page-nav .active:hover {
+        color:yellow;
+    }
+    nav.page-nav .active:before{
+        content:"";        
+        top: 6rem;
+        height: 0;
+        width: 0;
+        margin-left:-1.9rem;
+        border-top:2rem solid #c95656;
+        border-right:6.5rem solid transparent;
+        display:block;
+        position:absolute;
+
+    }
+    nav.page-nav .active:after{
+        content:"";        
+        top: 6rem;
+        height: 0;
+        width: 0;
+        margin-left:4.3rem;
+        border-top:2rem solid #8d0606;
+        border-left:6.5rem solid transparent;
+        display:block;
+        position:absolute;
+    }

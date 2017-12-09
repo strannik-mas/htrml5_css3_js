@@ -1,0 +1,27 @@
+﻿
+body {
+    margin:0;
+    background-color: #EAEEFA;
+    font-family:Calibri;
+}
+nav
+{
+    background-color:black;
+}
+div.container
+{
+   padding:10px 0;
+}
+div.container a
+{
+    padding:20px;
+    color:white;
+    vertical-align:central;
+    width:80px;
+   }
+header, article, footer
+{
+    margin: auto 50px auto 20px;
+}
+
+

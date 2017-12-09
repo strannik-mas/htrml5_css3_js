@@ -1,0 +1,5 @@
+D:\Документы\html5_css3_js\3day\6module\Starter\Exercise 1\ContosoConf\bin\ContosoConf.dll
+D:\Документы\html5_css3_js\3day\6module\Starter\Exercise 1\ContosoConf\bin\ContosoConf.pdb
+D:\Документы\html5_css3_js\3day\6module\Starter\Exercise 1\ContosoConf\obj\Debug\ContosoConf.csprojResolveAssemblyReference.cache
+D:\Документы\html5_css3_js\3day\6module\Starter\Exercise 1\ContosoConf\obj\Debug\ContosoConf.dll
+D:\Документы\html5_css3_js\3day\6module\Starter\Exercise 1\ContosoConf\obj\Debug\ContosoConf.pdb

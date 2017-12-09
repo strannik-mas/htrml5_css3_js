@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script>
+        function requestServerTime() {
+            //$('#result').load("serverTime.aspx"); -кэшируется на стороне сервера
+            $.post("serverTime.aspx", function (data) {
+                $("#result").html(data);
+            }).fail(function () {
+                $("#result").html("Fail getting data");
+            });
+        }
+        function requestHello() {
+
+            $.ajax(
+                {
+                    url: "hello.aspx",
+                    type : "POST",
+                    timeout: 1000,
+                    data: $("#myForm").serialize(),
+/*
+                    data:
+
+                        
+                        JSON.stringify(
+                            $("#myForm").serializeArray()
+                        ),
+                        */
+                        /*
+                        JSON.stringify(
+                        {
+                            name : $("#name").val().trim()
+                        }),
+                        */
+                    //processData : false 
+                }
+               ).success(function (data) {
+                   $("#result").html(data);
+               });
+/*
+            $.post("hello.aspx", $("#myForm").serialize(),
+                function (data) {
+                    $("#result").html(data);
+                });
+
+            
+            $.post("hello.aspx", "name=" + $("#name").val(),
+                function (data) {
+                    $("#result").html(data);
+                });
+            */
+        }
+        /*
+        var request;
+        function requestServerTime() {
+            request = new XMLHttpRequest();
+            request.addEventListener("readystatechange", function () {
+                if (request.readyState == 4) {
+                    document.getElementById("result").
+                    innerHTML = request.responseText;
+                }
+            }, false);
+            request.open("GET", "serverTime.aspx");
+            request.send();
+        }
+        */
+    </script>
+</head>
+<body>
+    <h1>
+        Ajax communication
+    </h1>
+    <input type="button" value="request server time" onclick="requestServerTime()" />
+    <br />
+    <form id="myForm">
+        <input type="text" id ="name" name="name" oninput="requestHello()"/>
+    </form>
+    
+
+    <h2 id="result"></h2>
+
+</body>
+</html>

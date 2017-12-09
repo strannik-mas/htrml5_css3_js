@@ -1,0 +1,26 @@
+input:invalid {
+	color:red;
+}
+
+#questions {
+	display:block;
+	width:300px;
+	overflow:visible;
+}
+
+#questions li img {
+	cursor:pointer;	
+	position:relative;
+	top:3px;
+}
+
+table, th, td {
+	border:1px solid black;
+	padding:2px;
+}
+
+td img {
+	cursor:pointer;	
+	display:block;
+	margin:auto;
+}

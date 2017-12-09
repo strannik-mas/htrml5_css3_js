@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+  <title>javaDemo</title>
+  <script>
+	var book = {
+		title: "Книга1",
+		price:300,
+		show:function(){
+			alert(this.title+ " : "+this.price)
+		}
+	
+	
+	}
+	
+	var Book = function(title, price){
+		var _title;
+		//this.title = title;
+		_title = title;
+		this.price = price;
+		this.show = function(){
+			alert(this.title+ " : "+this.price)
+		}
+		this.getTitle = function(){
+			return _title;
+		}
+		this.setTitle = function(){
+			if (title) _title = title;
+		}
+	}
+	
+	var AcientBook = {
+		language : "ru",
+		makeEnglish : function(){
+			this.language = "en";
+		}
+	}
+	
+	
+	
+	Book.prototype = AcientBook;
+	
+	var book = new Book ("Книженция1", 100);
+	var book2 = new Book ("Книженция2", 200);
+	alert(book.getTitle());
+	alert(book.setTitle("abc"));
+	
+	//var book3 = Object.create(AcientBook);
+	//var book4 = Object.create(null, {author = "Serg"}); //не работает
+	//var book4 = Object.create(Object.getPrototypeOf(book));
+	//alert(book3.language);
+	//alert(book4.language);
+	
+	
+	//alert(book.constructor);
+	//book.language = "en";
+	//book.makeEnglish();
+	//alert(book.language);
+	//alert(book2.language);
+	//book.show();
+	//book2.show();
+	
+	
+	/*
+
+	var book = {};
+	book.title = "Книженция 1";
+	book.price = 200;
+	book.show = function (){
+		alert(this.title+ " : "+this.price)
+	}
+  
+	book.show();
+  
+  	var specialist = 
+	{
+		count : 10,
+		show : function() {
+			alert(specialist.count);
+		}
+	}
+	 //глючит с пространством имен если между стоит как сейчас
+	(function t(){
+		var x = 20;
+		alert(x);
+	})();
+	*/
+ // var x = 11;
+	function test(){
+		"use strict"
+		if (window)
+		{
+			x=10 //можно так объявлять и переменная становится глобальной 
+			//var x=10;
+			
+		}
+		alert(x);
+	}
+	function test2(){
+		alert(x);
+	
+	}
+	function test3()
+	{
+	    alert(arguments[0]);
+	}
+	//specialist.show();
+  var simpleBook = {};
+	Object.defineProperty(simpleBook,
+		"title",
+		{
+			//value:"Book",
+			writeable:true,		//работает только без сеттера
+			enumerable : true,
+			configurable:true,
+			set: function(t){
+				this._title = t.trim();
+			},
+			get: function(){
+				return this._title;
+			}
+		});
+	simpleBook.title = "                    abc   ";
+	alert(simpleBook.title);
+  </script>
+</head>
+<body>
+    <input type="file" multiple /> 
+	<input type="button" value="test" onclick="test()"/>
+	<input type="button" value="test2" onclick="test2()"/>
+    <input type="button" value="test3" onclick="test3(123)"/>
+</body>
+</html>
